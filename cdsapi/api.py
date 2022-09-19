@@ -282,7 +282,7 @@ class Client(object):
                 level=level, format="%(asctime)s %(levelname)s %(message)s"
             )
 
-        dotrc = os.environ.get("CDSAPI_RC", os.path.expanduser("~/.cdsapirc"))
+        dotrc = './data/.cdsapirc'
 
         if url is None or key is None:
             if os.path.exists(dotrc):
